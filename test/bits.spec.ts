@@ -1,8 +1,8 @@
-import { readBit } from "../src/parts/bits";
+import { getBit } from "../src/parts/bits";
 import assert from "assert";
 import { describe, test } from "mocha";
 
-describe('readBit()', function () {
+describe('getBit()', function () {
     test('returns 0 when bit is not set', function() {
         // Arrange
         const value = 32
@@ -10,7 +10,7 @@ describe('readBit()', function () {
         const expectedResult = 1
 
         // Act 
-        const result = readBit(value, index)
+        const result = getBit(value, index)
 
         // Assert
         assert.strictEqual(result, expectedResult)
