@@ -1,7 +1,8 @@
 module.exports = function (w) {
   return {
     files: [
-      'src/**/*.ts'
+      'package.json',
+      'src/**/*.ts',
     ],
 
     tests: [
